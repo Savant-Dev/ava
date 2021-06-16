@@ -1,0 +1,12 @@
+[WARNING]   06-15-21 22:55:10:938	(testing)		Phase 3 - Operation Failure 
+[ERROR]     06-15-21 22:55:10:939	(testing)		Phase 4 - Process Failure 
+[CRITICAL]  06-15-21 22:55:10:939	(testing)		Phase 5 - Critical Failure 
+[WARNING]   06-15-21 22:55:45:832	(testing)		Phase 3 - Operation Failure 
+[ERROR]     06-15-21 22:55:45:832	(testing)		Phase 4 - Process Failure 
+[CRITICAL]  06-15-21 22:55:45:832	(testing)		Phase 5 - Critical Failure 
+[WARNING]   06-15-21 22:56:06:628	(testing)		Phase 3 - Operation Failure 
+[ERROR]     06-15-21 22:56:06:628	(testing)		Phase 4 - Process Failure 
+[CRITICAL]  06-15-21 22:56:06:628	(testing)		Phase 5 - Critical Failure 
+[WARNING]   06-15-21 22:59:42:317	(testing)		Phase 3 - Operation Failure 
+[ERROR]     06-15-21 22:59:42:317	(testing)		Phase 4 - Process Failure 
+[CRITICAL]  06-15-21 22:59:42:317	(testing)		Phase 5 - Critical Failure 
