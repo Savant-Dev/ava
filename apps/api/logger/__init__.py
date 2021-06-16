@@ -75,8 +75,6 @@ parser_config = {
 class StatEngine():
     ''' Timelapse Statistical Analyzation of Recorded Events '''
 
-    dir: str = abspath(__file__).replace('__init__.py', 'data/events.log')
-
     @staticmethod
     def get_timestamp(duration: str) -> datetime:
         seconds = 0
@@ -280,5 +278,3 @@ def testLogger() -> None:
     logger.error('testing', 'Phase 4 - Process Failure')
     logger.critical('testing', 'Phase 5 - Critical Failure')
     logger.trace('testing', 'Testing Complete')
-
-testLogger()
