@@ -162,11 +162,15 @@ class LoggerModule():
 
     def _notify(self, *, message: str) -> None:
         load_dotenv()
-
+        '''
         report = (
             'Oh No! A Critical Failure has been detected in my API! \n'
             f'Here are the notes from my error handler: \n\n{message}'
         )
+        '''
+
+        report = message
+
 
         client = Client(getenv('TWILIO_SID'), getenv('TWILIO_KEY'))
 
@@ -267,14 +271,3 @@ def getLogger(level: str) -> LoggerModule:
         log_level = levels['TRACE']
 
     return LoggerModule(log_level)
-
-def testLogger() -> None:
-    logger = LoggerModule(levels['TRACE'])
-
-    logger.trace('testing', 'Beginning Testing of Logger Module ...')
-    logger.debug('testing', 'Phase 1 - Debug Mode')
-    logger.info('testing', 'Phase 2 - Info Mode')
-    logger.warn('testing', 'Phase 3 - Operation Failure')
-    logger.error('testing', 'Phase 4 - Process Failure')
-    logger.critical('testing', 'Phase 5 - Critical Failure')
-    logger.trace('testing', 'Testing Complete')
