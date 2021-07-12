@@ -264,7 +264,7 @@ class LoggerModule():
         self._notify(message=notification)
 
 
-def getLogger(level: str) -> LoggerModule:
+def getLogger(level: str = 'TRACE') -> LoggerModule:
     try:
         log_level = levels[level]
     except KeyError:
