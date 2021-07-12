@@ -8,7 +8,7 @@ from os import environ
 from dotenv import load_dotenv
 from dataclasses import dataclass
 
-from .logger import getLogger, LoggerModule
+from logger import getLogger, LoggerModule
 
 
 load_dotenv()
